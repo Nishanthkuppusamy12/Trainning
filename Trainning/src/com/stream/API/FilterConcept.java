@@ -16,7 +16,7 @@ public class FilterConcept {
 		marks.add(60);
 		marks.add(65);
 		System.out.println(marks);
-		List<Integer> noOfStudentsFailed=marks.stream().filter(m->m<35).collect(Collectors.toList());
+		List<Integer> noOfStudentsFailed = marks.stream().filter(m->m<35).collect(Collectors.toList());
         System.out.println( noOfStudentsFailed);
 	}
 
