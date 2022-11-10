@@ -10,14 +10,14 @@ public class FilterConcept {
 		
 		ArrayList<Integer> marks = new ArrayList<Integer>();
 		
-		marks.add(0);
-		marks.add(20);
-		marks.add(15);
-		marks.add(10);
-		marks.add(5);
+		marks.add(50);
+		marks.add(30);
+		marks.add(34);
+		marks.add(60);
+		marks.add(65);
 		System.out.println(marks);
-		List<Integer> l2=marks.stream().map(i->i+10).collect(Collectors.toList());
-        System.out.println(l2);
+		List<Integer> noOfStudentsFailed=marks.stream().filter(m->m<35).collect(Collectors.toList());
+        System.out.println( noOfStudentsFailed);
 	}
 
 }
