@@ -15,6 +15,7 @@ public class Map {
 		m.put(100, "Food");
 		m.put(600,"Sleeping");
 		m.put(900, "Apple");
+		
 		System.out.println(m);
 	}
 
