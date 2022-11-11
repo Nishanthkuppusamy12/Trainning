@@ -16,7 +16,7 @@ public class FilterConcept {
 		marks.add(60);
 		marks.add(65);
 		System.out.println(marks);
-		List<Integer> l=marks.stream().flatMap(m->m.getInteger(m));
+		//List<Integer> l=marks.stream().flatMap(m->m);
         
 	}
 
