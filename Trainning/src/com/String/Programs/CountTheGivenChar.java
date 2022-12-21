@@ -15,7 +15,9 @@ public class CountTheGivenChar {
 		
 		//int lengofSt = st.length();
 		String s = st.replace(c+"","");
+		System.out.println(s);
 		int n = st.length()-s.length();
+		System.out.println(n);
 		System.out.println(" The given char "+c+" occurences at "+n+" times");
 		
 	}

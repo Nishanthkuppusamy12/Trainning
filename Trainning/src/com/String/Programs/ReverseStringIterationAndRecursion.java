@@ -17,7 +17,7 @@ public class ReverseStringIterationAndRecursion {
 		if(st==null || st.length()<=1) {
 			return st;
 		}
-		return reverseUsingRecursion(st.substring(1))+st.charAt(0);
+		return reverseUsingRecursion(st.substring(3))+st.charAt(0);
 		
 	}
 }

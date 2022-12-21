@@ -1,18 +1,21 @@
 package com.String.Programs;
 
-import java.util.Scanner;
-
 public class ReverseEachWordString {
 
 public static void main(String[] args) {
-	Scanner sc = new Scanner (System.in);
-	System.out.println("Enter the String ");
-	String st = sc.nextLine();
-	String []arr=st.split(" ");
-	String temp="";
 	
-	for(int i=arr.length-1;i>0;i--) {
-	
+	System.out.println(reverseWord("Today is friday"));
+}
+	public static String reverseWord(String str) {
+		String []words = str.split(" ");
+		String temp = "";
+		
+		for(String w : words) {
+			StringBuilder sb = new StringBuilder(w);
+			sb.reverse();
+			temp+=sb.toString()+" ";
+		}
+		return temp.trim();
 	}
 }
-}
+ 
